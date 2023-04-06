@@ -1,0 +1,6 @@
+{
+    "WillLuke.nextjs.addTypesOnSave": true,
+    "WillLuke.nextjs.hasPrompted": true,
+    "js/ts.implicitProjectConfig.target": "ES2022",
+    "typescript.enablePromptUseWorkspaceTsdk": true
+}

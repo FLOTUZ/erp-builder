@@ -1,0 +1,32 @@
+mutation UpdateUser(
+  $idUser: Int!
+  $names: String
+  $firstname: String
+  $lastname: String
+  $email: String
+  $password: String
+  $about_user: String
+  $is_active: Boolean
+  $roleId: Int
+){
+  updateUser(id: $idUser, data:{
+    names: $names
+    firstname: $firstname
+    lastname: $lastname
+    email: $email
+    password: $password
+    about_user: $about_user
+    is_active: $is_active
+    roleId: $roleId
+  }){
+    id
+    names
+    firstname
+    lastname
+    email
+    about_user
+    is_active
+    updatedAt
+    createdAt
+  }
+}

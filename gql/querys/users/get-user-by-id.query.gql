@@ -1,0 +1,17 @@
+query GetUserById ($id: Int!) {
+  userById(id: $id) {
+    id
+    names
+    firstname
+    lastname
+    email
+    about_user
+    is_active
+    is_deleted
+    Role {
+      id
+      name
+      description
+    }
+  }
+}

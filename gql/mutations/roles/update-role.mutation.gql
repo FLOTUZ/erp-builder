@@ -1,0 +1,16 @@
+mutation UpdateRole(
+    $id: Int!
+    $name: String
+    $description: String
+) {
+    updateRole(id: $id, data:{
+        name: $name
+        description: $description
+    }){
+        id
+        name
+        description
+        createdAt
+        updatedAt
+    }
+}

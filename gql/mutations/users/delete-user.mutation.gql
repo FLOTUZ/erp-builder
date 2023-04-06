@@ -1,0 +1,12 @@
+mutation DeleteUser($id: Int!) {
+  deleteUser(id: $id){
+    id
+    names
+    firstname
+    lastname
+    email
+    about_user
+    is_active
+    is_deleted
+  }
+}
