@@ -33,10 +33,11 @@ See the documentation for all the connection string options:
 DATABASE_URL="postgresql://johndoe:randompassword@localhost:5432/mydb?schema=public"
 ```
 
-Once the database connection environment variable has been modified, you must run the migrations with the following command.
+Once the database connection environment variable has been modified, you must run the migrations and fill database with the following command.
 
 ```bash
 npm run prisma:migrate
+npm run prisma:seed
 ```
 
 ### Run the development server:
